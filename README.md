@@ -15,7 +15,8 @@ _License_: None
 _Publications_:
 - None
 
-# Building from source in a nutshell (see https://integrativemodeling.org/latest/doc/manual/installation.html for general IMP installation instruction):
+# Building from source in a nutshell:
+- See https://integrativemodeling.org/latest/doc/manual/installation.html for general IMP installation instruction
 - Make sure IMP prerequisites are installed
 - Download IMP source code as explained in the installation manual
 - Build IMP according to online instructions
