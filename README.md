@@ -22,5 +22,6 @@ _Publications_:
 - Build IMP according to online instructions
 
 # Installation:
-$ cmake -DCMAKE_CXX_FLAGS="-std=c++11" .. -DCMAKE_BUILD_TYPE=Release \n
+$ cmake -DCMAKE_CXX_FLAGS="-std=c++11" .. -DCMAKE_BUILD_TYPE=Release
+
 $ make
