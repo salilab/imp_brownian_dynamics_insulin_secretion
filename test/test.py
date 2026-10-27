@@ -320,7 +320,7 @@ sos.update_always("initial conformation")
 print("Running simulation", file = f1)
 print("Score before: {:f}".format(sf.evaluate(True)), file = f1)
 n_frames_left=sim_time_frames
-frames_per_cycle=VDOS_PERIOD  # can be 10, or 100, dependeing on the frequency of the optimizer state and how much insulin vesicles move.
+frames_per_cycle=VDOS_PERIOD  # can be 10, or 100, depending on the frequency of the optimizer state and how much insulin vesicles move.
 while n_frames_left>0:
     cur_n_frames=min(frames_per_cycle, n_frames_left)
     bd.optimize(cur_n_frames)
@@ -337,7 +337,7 @@ while n_frames_left>0:
     print(*do_stats_after_optimize(h_vesicles_root.get_children())[3], sep="  ", file = f6)  #only vesicle
     n_frames_left = n_frames_left - cur_n_frames
     
-print("Run finished succesfully", file = f1)
+print("Run finished successfully", file = f1)
 print("Score ater: {:f}".format(sf.evaluate(True)), file = f1)
 
 end=time.time()

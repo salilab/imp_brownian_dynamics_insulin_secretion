@@ -6,7 +6,7 @@
  * 1, Read in the coefficients of the polynomial fitting for the score -k *ln(radial distribution function) of insulin vesicles around nucleus.
  * 2, Read in the coefficient k for the score -k *ln(radial distribution function).
  * 3, Read the insulin vesicle coordinates.
- * 4, Apply the contineous singlton score on insulin vesicles between Rne + Risg - Rpbc - Risg.
+ * 4, Apply the continuous singleton score on insulin vesicles between Rne + Risg - Rpbc - Risg.
  * 
  * Note: Polynomial fitting is applied between 1/2 of the first shell to 1/2 of the last shell
  *       RDF is calculated by dividing the cytoplasma into 8 shells
@@ -49,7 +49,7 @@ class IMPINSULINSECRETIONEXPORT RadialDistributionFunctionSingletonScore
     * 1, Read in the coefficients of the polynomial fitting for the score -k *ln(radial distribution function) of insulin vesicles around nucleus.
     * 2, Read in the coefficient k for the score -k *ln(radial distribution function)
     * 3, Read the insulin vesicle coordinates  
-    * 4, Apply the contineous singlton score on insulin vesicles between Rne + Risg - Rpbc - Risg.
+    * 4, Apply the continuous singleton score on insulin vesicles between Rne + Risg - Rpbc - Risg.
   
      @param m the model of p
      @param p the index in m of an object of type Particle
@@ -123,4 +123,3 @@ class IMPINSULINSECRETIONEXPORT RadialDistributionFunctionSingletonScore
 IMPINSULINSECRETION_END_NAMESPACE
 
 #endif /* IMPINSULINSECRETION_RADIAL_DISTRIBUTION_FUNCTION_SINGLETON_SCORE_H */
- 

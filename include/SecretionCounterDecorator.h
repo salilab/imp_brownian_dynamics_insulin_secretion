@@ -1,6 +1,6 @@
 /**
  *  \file IMP/insulinsecretion/SecretionCounterDecorator.h
- *  \brief Add a secretion decorator to a granule to count the number of secretion events occured to it.
+ *  \brief Add a secretion decorator to a granule to count the number of secretion events occurred to it.
  *
  * Description:
  * 1, Set a decorator to count the number of secretion events. 

@@ -1,6 +1,6 @@
 /**
  *  \file IMP/insulinsecretion/CaChannelOpeningOptimizerState.h
- *  \brief An optimizer state that updates the open/closed state of Ca2+ channles. 
+ *  \brief An optimizer state that updates the open/closed state of Ca2+ channels.
  *
  * Description:
  * 1, Get optimizer state for each frame of the trajectory (CaChannel).
@@ -22,7 +22,7 @@
 IMPINSULINSECRETION_BEGIN_NAMESPACE
 
 /**
-   An optimizer state that updates the open/closed of Ca2+ channles. 
+   An optimizer state that updates the open/closed of Ca2+ channels.
  */
 
 class IMPINSULINSECRETIONEXPORT CaChannelOpeningOptimizerState
@@ -46,7 +46,7 @@ class IMPINSULINSECRETIONEXPORT CaChannelOpeningOptimizerState
 
  public:
   /**
-     An optimizer state that updates the open/closed of Ca2+ channles. 
+     An optimizer state that updates the open/closed of Ca2+ channels.
 
      @param cachannel Ca2+ channels
      @param troughn the number of Ca2+ channels in the opening state at the trough

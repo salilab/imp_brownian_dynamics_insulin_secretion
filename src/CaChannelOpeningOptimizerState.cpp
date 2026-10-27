@@ -1,6 +1,6 @@
 /**
  *  \file IMP/insulinsecretion/CaChannelOpeningOptimizerState.cpp
- *  \brief An optimizer state that updates the open/closed state of Ca2+ channles. 
+ *  \brief An optimizer state that updates the open/closed state of Ca2+ channels.
  *
  * Description:
  * 1, Get optimizer state for each frame of the trajectory (CaChannel).
@@ -47,7 +47,7 @@ void CaChannelOpeningOptimizerState::do_update
   channel_oscillation();
 }
 
-//! oscillating the voltage for the opening of Ca2+ channles
+//! oscillating the voltage for the opening of Ca2+ channels
 void CaChannelOpeningOptimizerState::channel_oscillation() {
   set_was_used(true);
   Model* m = get_model(); 

@@ -89,7 +89,7 @@ void InsulinSecretionOptimizerState::do_reset(ParticleIndex pi)
 {
   Model* m= get_model();
   IMP_FUNCTION_LOG;
-  IMP_LOG_TERSE("Reseting: " << get_particle(m, pi)->get_name() << std::endl);
+  IMP_LOG_TERSE("Resetting: " << get_particle(m, pi)->get_name() << std::endl);
   IMP_UNUSED(pi);     
   core::XYZR xyzr0(m, pi); // granule
   algebra::Sphere3D near_nucleus = algebra::Sphere3D(nucleus_sphere_.get_center(), 
