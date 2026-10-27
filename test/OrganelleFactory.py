@@ -2,7 +2,6 @@
 Factory for generating organelles
 """
 
-from __future__ import print_function, division
 import IMP.atom
 import IMP.algebra
 import IMP.core
