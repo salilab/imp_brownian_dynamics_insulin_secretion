@@ -12,6 +12,7 @@
  */
 
 #include <IMP/insulinsecretion/VesicleTraffickingSingletonScore.h>
+#include <IMP/internal/VectorBaseD.h>
 
 IMPINSULINSECRETION_BEGIN_NAMESPACE
 
@@ -36,7 +37,7 @@ double VesicleTraffickingSingletonScore::evaluate_index
 
   core::XYZ xyz(m,pi);
   algebra::Vector3D dxyz = xyz.get_coordinates() - center_;
-  double dxyz_magnitude = algebra::get_magnitude_and_normalize_in_place( dxyz );
+  double dxyz_magnitude = IMP::internal::get_magnitude_and_normalize_in_place( dxyz );
   double score = -k_  * dxyz_magnitude; // score decreases (improves) radially 
   // The derivative accumulator
   if (da) {

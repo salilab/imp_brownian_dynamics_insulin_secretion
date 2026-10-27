@@ -19,6 +19,7 @@
 
 #include <IMP/insulinsecretion/RadialDistributionFunctionSingletonScore.h>
 #include <IMP/UnaryFunction.h>
+#include <IMP/internal/VectorBaseD.h>
 #include <cmath>
 
 IMPINSULINSECRETION_BEGIN_NAMESPACE
@@ -48,7 +49,7 @@ double RadialDistributionFunctionSingletonScore::evaluate_index
   double Rnucleus = nucleus_sphere_.get_radius();
   double Rgranule = xyzr.get_radius();
   algebra::Vector3D dxyz = xyzr.get_coordinates() - cell_sphere_.get_center();
-  double dxyz_magnitude = algebra::get_magnitude_and_normalize_in_place( dxyz ) - Rnucleus - Rgranule;
+  double dxyz_magnitude = IMP::internal::get_magnitude_and_normalize_in_place( dxyz ) - Rnucleus - Rgranule;
   if (0 <= dxyz_magnitude && dxyz_magnitude <= Rcell - Rnucleus - 2*Rgranule) {
     double score =  k_ * (poly_param_[0] * pow(dxyz_magnitude,5) + poly_param_[1] * pow(dxyz_magnitude,4) 
                     + poly_param_[2] * pow(dxyz_magnitude,3) + poly_param_[3] * pow(dxyz_magnitude,2)

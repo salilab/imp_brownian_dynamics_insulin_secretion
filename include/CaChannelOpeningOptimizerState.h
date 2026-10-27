@@ -17,7 +17,6 @@
 #include <IMP/insulinsecretion/insulinsecretion_config.h> // provide macros to mark functions and classes as exported and to set up namespaces
 #include <IMP/insulinsecretion/CaChannelStateDecorator.h>
 #include <IMP/OptimizerState.h> // an owning Optimizer commits to a new set of coordinates
-#include <IMP/core/PeriodicOptimizerState.h>
 
 IMPINSULINSECRETION_BEGIN_NAMESPACE
 
@@ -26,10 +25,10 @@ IMPINSULINSECRETION_BEGIN_NAMESPACE
  */
 
 class IMPINSULINSECRETIONEXPORT CaChannelOpeningOptimizerState
-: public core::PeriodicOptimizerState 
+: public OptimizerState
 {
  private:
-   typedef core::PeriodicOptimizerState P; // define P as the member initializer
+   typedef OptimizerState P; // define P as the member initializer
    Particles cachannel_; // Ca2+ channel
    int oscillation_;
    int troughn_; // the number of Ca2+ channels in the opening state at the trough
