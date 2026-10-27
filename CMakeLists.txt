@@ -12,8 +12,6 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
 
   set(SWIG_EXECUTABLE swig CACHE STRING "Swig program")
 
-  find_package(Boost REQUIRED COMPONENTS thread system)
-
   find_package(IMP REQUIRED)
   include(${IMP_USE_FILE})
 
