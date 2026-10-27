@@ -1,16 +1,19 @@
-\brief New module created by make-module.py on Thu Oct 2 16:55:33 2025
+\brief Brownian dynamics simulations of insulin vesicle dynamics
 
 The insulinsecretion module is a module for constructing data-driven
 Brownian dynamics simulations of insulin vesicle dynamics in pancreatic β-cells.
 
 # Info
 
-_Author(s)_: (full names of author(s))
-Liping Sun
+_Author(s)_: Liping Sun
 
-_Maintainer_: (GitHub name of active maintainer)
+_Maintainer_: `L1P1NG`
 
-_License_: None
+_License_: [LGPL](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
 
 _Publications_:
 - None
