@@ -1,0 +1,10 @@
+*.pyc
+.DS_Store
+*~
+~.orig
+*~
+.*.sw?
+ModuleBuild.cmake
+CMakeModules
+*/CMakeLists.txt
+Files.cmake
