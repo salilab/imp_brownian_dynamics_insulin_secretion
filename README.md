@@ -1,5 +1,9 @@
 \brief Brownian dynamics simulations of insulin vesicle dynamics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23703930.svg)](https://doi.org/10.5281/zenodo.23703930)
+[![Build Status](https://github.com/salilab/imp_brownian_dynamics_insulin_secretion/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/salilab/imp_brownian_dynamics_insulin_secretion/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/salilab/imp_brownian_dynamics_insulin_secretion/branch/main/graph/badge.svg)](https://codecov.io/gh/salilab/imp_brownian_dynamics_insulin_secretion)
+
 The insulinsecretion module is a module for constructing data-driven
 Brownian dynamics simulations of insulin vesicle dynamics in pancreatic β-cells.
 
