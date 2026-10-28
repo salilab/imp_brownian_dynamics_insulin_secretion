@@ -64,6 +64,8 @@ double RadialDistributionFunctionSingletonScore::evaluate_index
       xyzr.add_to_derivatives(deriv, *da);
     }
     return score;
+  } else {
+    return 0.;
   }
 }
   
